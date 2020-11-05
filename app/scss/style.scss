@@ -1,9 +1,202 @@
 @import "vars";
 @import "libs";
 @import "fonts";
-
-
-
-
-
+@font-face{
+    font-family: 'Gilroy Bold';
+    src: url('../fonts/Gilroy-Bold.ttf');
+}
+@font-face{
+    font-family: 'Gilroy Medium';
+    src: url('../fonts/Gilroy-Medium.ttf');
+}
+@font-face{
+    font-family: 'Gilroy Regular';
+    src: url('../fonts/Gilroy-Regular.ttf');
+}
+@font-face{
+    font-family: 'Gilroy Light';
+    src: url('../fonts/Gilroy-Light.ttf');
+}
+@font-face{
+    font-family: 'Chronical Bold';
+    src: url('../fonts/ChronicleDisp-Bold.otf');
+}
+@font-face{
+    font-family: 'Chronical Semibold';
+    src: url('../fonts/ChronicleDisp-SemiboldItal.otf');
+}
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    font-family: 'Gilroy Bold';
+    color: #fff;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.intro{
+    height: 190vh;
+    background-image: url('../img/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__info{
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        &-social{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: center;
+            
+        }
+    }
+    &__bg{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+    &__social-title{
+        color: #fff;
+        transform: rotate(90deg);
+        height: 61px;
+        margin-bottom: 25px;
+        display: flex;
+        align-items: flex-end;
+    }
+    &__social-twitter{
+        margin-left: -5px;
+        cursor: pointer;
+    }
+    &__social-inst{
+        margin-bottom: 25px;
+        cursor: pointer;
+    }
+}
+.header__container{
+    max-width: 1770px;
+    padding: 0 15px;
+    margin: auto;
+}
+.header{
+    
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+    }
+    &__nav-item{
+        display: flex;
+    }
+    &__account{
+        display: flex;
+        align-items: center;
+        &-link{
+            margin-left: 15px;
+            
+        }
+        &-link-item{
+        color: #fff;
+        position: relative;
+        padding-bottom: 5px;
+        &:before {
+        content: "";
+        width: 0;
+        height: 0.1em;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        background: rgb(80, 80, 80);
+        transition: all 0.5s;
+    }
+        &:hover {
+         &:before {
+            width: 100%;
+            left: 0;
+            background: rgb(206, 206, 206);
+            }
+        }
+        }
+    }
+    
+}
+.nav{
+    &__link{
+        margin-left: 38px;
+        color: #fff;
+        opacity: 1;
+        
+        text-decoration: none;
+        font-size: 1em;
+        position: relative;
+        padding-bottom: 5px;
+        &:before {
+        content: "";
+        width: 0;
+        height: 0.1em;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        background: rgb(80, 80, 80);
+        transition: all 0.5s;
+    }
+        &:hover {
+         &:before {
+            width: 100%;
+            left: 0;
+            background: rgb(206, 206, 206);
+            }
+        }
+    }
+    
+}
+.first{
+    margin-left: 0;
+}
+.page__nav{
+    position: fixed;
+    right: 70px;
+    top: 30%;
+    &-item{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        & h4{
+            margin-bottom: 50px;
+        }
+    }
+    &-line{
+        width: 3px;
+        height: 100%;
+        background-color: #D4D7D5;
+        position: absolute;
+        right: -20px;
+        top: 0;
+        &-item{
+            width: 3px;
+            height: 20%;
+            background-color: #fff;
+            position: absolute;
+            top: 0;
+            transition: all 0.8s;
+        }
+    }
+}
+.item{
+    cursor: pointer;
+}
+.item.active{
+    margin-right: 10px;
+    font-size: 20px;
+}
 @import "media";
