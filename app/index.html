@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <div class="intro">
+  <div id="intro" class="intro">
    
     <div class="header__container">
       <div class="intro__inner">
@@ -34,13 +34,14 @@
               </div>
             </div>
           </div>
-          <div class="page__nav">
+          <div class="page__nav anim-items">
             <div class="page__nav-inner">
               <div class="page__nav-item">
-                <h4 class="item first-item active">Start</h4>
-                <h4 class="item second-item">01</h4>
-                <h4 class="item three-item">02</h4>
-                <h4 class="item four-item">03</h4>
+                <h4 id="navBtn0" class="item first-item active">Start</h4>
+                <h4 id="navBtn1" class="item second-item">01</h4>
+                <h4 id="navBtn2" class="item three-item">02</h4>
+                <h4 id="navBtn3" class="item four-item">03</h4>
+                <h4 id="navBtn4" class="item five-item">End</h4>
               </div>
               <div class="page__nav-line">
                 <div class="page__nav-line-item"></div>
@@ -49,14 +50,14 @@
           </div>
         </header>
         <div class="intro__info">
-          <div class="intro__info-social">
+          <div class="intro__info-social anim-items">
            <div class="intro__social-title">
              <h4>Follow us</h4>
            </div>
            <div class="intro__social-inst">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="https://www.instagram.com/sergey_murzzak/" target="blank"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.8 1.90735e-05H14.2C17.4032 1.90735e-05 20 2.59677 20 5.80002V14.2C20 17.4033 17.4032 20 14.2 20H5.8C2.59675 20 0 17.4033 0 14.2V5.80002C0 2.59677 2.59675 1.90735e-05 5.8 1.90735e-05ZM5.6 2C3.61177 2 2 3.61178 2 5.6V14.4C2 16.3882 3.61177 18 5.6 18H14.4C16.3882 18 18 16.3882 18 14.4V5.6C18 3.61178 16.3882 2 14.4 2H5.6ZM15.25 3.5C15.9404 3.5 16.5 4.05965 16.5 4.75C16.5 5.44036 15.9404 6 15.25 6C14.5596 6 14 5.44036 14 4.75C14 4.05965 14.5596 3.5 15.25 3.5ZM10 5C12.7614 5 15 7.23858 15 10C15 12.7614 12.7614 15 10 15C7.23857 15 5 12.7614 5 10C5 7.23858 7.23857 5 10 5ZM10 7C8.3431 7 7 8.3432 7 10C7 11.6569 8.3431 13 10 13C11.6569 13 13 11.6569 13 10C13 8.3432 11.6569 7 10 7Z" fill="white"/>
-              </svg>
+              </svg></a>
               
            </div>
            <div class="intro__social-twitter">
@@ -82,13 +83,13 @@
       </div>
     </div>
   </div>
-  <section class="started">
+  <section id="started" class="started">
     <div class="container">
       <div class="started__num">
         <h4>01</h4>
       </div>
       <div class="started__inner">
-        <div class="started__text">
+        <div class="started__text anim-items">
           <div class="started__subtitle">
             <h3>Get Started</h3>
           </div>
@@ -106,13 +107,115 @@
               
           </div>
         </div>
-        <div class="started__img">
+        <div class="started__img anim-items">
           <img src="img/started.jpg" alt="">
         </div>
       </div>
     </div>
   </section>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <section id="hiking" class="hiking">
+    <div class="container">
+      <div class="hiking__inner">
+        <div class="hiking__img anim-items">
+          <img src="img/hiking.jpg" alt="">
+        </div>
+       <div class="hiking__text anim-items">
+        <div class="hiking__num">
+          <h4>02</h4>
+        </div>
+        <div class="hiking__subtitle">
+          <h4>Hiking Essentials</h4>
+        </div>
+        <div class="hiking__title">
+          <h4>Picking the right Hiking Gear!</h4>
+        </div>
+        <div class="hiking__descr">
+          <p>The nice thing about beginning hiking is that you don’t really need any special gear, you can probably get away with things you already have. Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes, which will get heavy and chafe wif they get sweaty or wet.</p>
+        </div>
+        <div class="hiking__more">
+          <p>read more</p>
+          <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 -6.99382e-07L14.59 1.41L20.17 7L-3.93402e-07 7L-3.0598e-07 9L20.17 9L14.58 14.58L16 16L24 8L16 -6.99382e-07Z" fill="#FBD784"/>
+            </svg>
+            
+        </div>
+       </div>
+      </div>
+    </div>
+  </section>
+  <section id="key" class="key">
+    <div class="container">
+      <div class="key__num">
+        <h4>03</h4>
+      </div>
+      <div class="key__inner">
+        <div class="key__text anim-items">
+          <div class="key__subtitle">
+            <h3>where you go is the key</h3>
+          </div>
+          <div class="key__title">
+            <h3>Understand Your Map & Timing</h3>
+          </div>
+          <div class="key__descr">
+            <p>To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For example, I’ll read the guide and know that say, in a mile, I make a right turn at the junction..</p>
+          </div>
+          <div class="key__link">
+            <a href="#">read more</a>
+            <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 -6.99382e-07L14.59 1.41L20.17 7L-3.93402e-07 7L-3.0598e-07 9L20.17 9L14.58 14.58L16 16L24 8L16 -6.99382e-07Z" fill="#FBD784"/>
+              </svg>
+              
+          </div>
+        </div>
+        <div class="key__img anim-items">
+          <img src="img/key.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="mntn__info">
+          <div class="mntn__logo">
+            <img src="img/logo.png" alt="">
+            <div class="mntn__descr">
+              <p>Get out there & discover your next slope, mountain & destination!</p>
+            </div>
+          </div>
+          
+          <div class="mntn__copyright">
+            <p>Copyright 2019 MNTN, Inc. Terms & Privacy</p>
+          </div>
+        </div>
+        <div class="footer__info">
+          <div class="footer__first-col">
+            <div class="first__col-title">
+              <h3>More on The Blog</h3>
+            </div>
+            <div class="first__col-descr">
+              <p class="first__col-item">About MNTN</p>
+              <p class="first__col-item">Contributors & Writers</p>
+              <p class="first__col-item">Write For Us</p>
+              <p class="first__col-item">Contact Us</p>
+              <p class="first__col-item">Privacy Policy</p>
+            </div>
+          </div>
+          <div class="footer__second-col">
+            <div class="second__col-title">
+              <h3>More on MNTN</h3>
+            </div>
+            <div class="second__col-descr">
+              <p class="second__col-item">The Team</p>
+              <p class="second__col-item">Jobs</p>
+              <p class="second__col-item">Press</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
 </body>
