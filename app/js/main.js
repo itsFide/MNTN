@@ -90,3 +90,13 @@ if(animItems.length > 0){
     },200)
 
 }
+// Бургер
+let burger = document.querySelector('.burger');
+let burgerItem = document.querySelectorAll('.burger__item');
+let mobileMenu = document.querySelector('.mobile__menu');
+burgerItem.forEach(function(event){
+    burger.addEventListener('click',function(){
+        event.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+    })
+})
